@@ -6,7 +6,7 @@ const thinky = require("thinky");
 //this is what causes your server to blow up if
 //rethinkdb is not running
 const db = thinky({
-  db: "firstAuthApi"
+  db: "authWalkthrough"
 });
 
 //bringing in the user model function, and calling the function

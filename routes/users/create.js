@@ -17,6 +17,7 @@ module.exports = {
   method: "POST",
   path: "/api/users",
   config: {
+    auth: { mode: "optional" },
     handler: function(request, reply) {
       //creating a new instance of a user from the User db model
       //will validate any data passwed in by compairing to the modelSchema
@@ -24,7 +25,9 @@ module.exports = {
 
       user
         .save() //saves the new user record to the database
-        .then(user => reply(user)) //sends the saved user record in the http response
+        .then(user => {
+          delete user.password, reply(user);
+        }) //sends the saved user record in the http response
         .catch(err => reply(err)); //sends the error if one occurred in the http response
     }
   }

@@ -2,6 +2,7 @@
 // Importing the file api from the same directory to register
 const hapi = require("hapi");
 const api = require("./api");
+const hapiAuthJWT = require("hapi-auth-jwt2");
 
 // Initializing a server instance called server - building a server
 const server = new hapi.Server();
@@ -27,6 +28,7 @@ server.connection({
 // more often then not is a pre built package we install
 server
   .register([
+    hapiAuthJWT,
     {
       register: api
     }

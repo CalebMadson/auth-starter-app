@@ -31,3 +31,6 @@
 2017-11-07T08:47:02.833851000 0.070192s notice: Server ready, "isaiahs_mbp_lan_n39" fbdbe9cb-905c-4b66-abb3-c7c4ea901924
 2017-11-07T08:47:04.255489000 1.491919s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: Starting a new Raft election for term 2.
 2017-11-07T08:47:04.278031000 1.514461s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: This server is Raft leader for term 2. Latest log index is 3.
+2017-11-07T12:05:44.459789000 11922.194308s info: Table 286cd0b2-8e80-4098-abf5-bd55ebd408bd: Starting a new Raft election for term 1.
+2017-11-07T12:05:44.459957000 11922.194476s info: Table 286cd0b2-8e80-4098-abf5-bd55ebd408bd: Added replica on this server.
+2017-11-07T12:05:44.477210000 11922.211729s info: Table 286cd0b2-8e80-4098-abf5-bd55ebd408bd: This server is Raft leader for term 1. Latest log index is 0.
